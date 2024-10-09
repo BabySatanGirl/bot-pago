@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar con PayPal</title>
+</head>
+<body>
+    <h1>Pagar con PayPal</h1>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAA-oIoA4NghbG6L-IUn1GXPHqAG0tPKH0aarZcZl_zDo_g2WwnJqpvFTDejLySwyXPR3xlOwxrAdcHh0Q&components=hosted-buttons&disable-funding=venmo&currency=EUR"></script>
+    <div id="paypal-container-SPKCP59YXSUDJ"></div>
+    <script>
+        paypal.HostedButtons({
+            hostedButtonId: "SPKCP59YXSUDJ",
+        }).render("#paypal-container-SPKCP59YXSUDJ");
+    </script>
+</body>
+</html>
+
