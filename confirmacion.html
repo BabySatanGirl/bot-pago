@@ -8,6 +8,14 @@
 <body>
     <h1>¡Gracias por tu compra!</h1>
     <p>Para unirte al grupo de Telegram, haz clic en el siguiente enlace:</p>
-    <a href="https://t.me/+8FljlEKQ-Ig3NDQ0" target="_blank">Unirse al grupo de Telegram</a>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        const groupLink = `https://t.me/+8FljlEKQ-Ig3NDQ0?token=${token}`;
+        window.onload = function() {
+            window.location.href = groupLink;
+        };
+    </script>
 </body>
 </html>
+
